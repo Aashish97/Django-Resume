@@ -1,0 +1,26 @@
+/*#navbar{*/
+    /*background-color: black;*/
+/*}*/
+.mynav{
+    background-color: green;
+}
+
+body {
+    margin: 0;
+    padding: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    color: white;
+}
+
+.navbar-brand{
+    font-size: 30px;
+    text-shadow: 2px 2px 5px red;
+    font-family: 'Satisfy', cursive;
+}
+
+.navbar-nav ul,li,a{
+color:#fff;
+}

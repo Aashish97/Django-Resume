@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Aashish Shrestha</title>
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="{% static 'resume/css/test.css'%}">
+
+  </head>
+  
+<body>
+    <nav class="navbar  mynav" role="navigation" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="{% url 'home' %}">Resume</a>
+            
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="{% url 'projects:project_index' %}" class="btn btn-simple">Projects</a></li>
+                <li><a href="#" class="btn btn-simple">Working Experience</a></li>
+                <li><a href="#" class="btn btn-simple">Skills</a></li>
+                <li><a href="#" class="btn btn-simple">Education</a></li>
+                <li><a href="#" class="btn btn-simple">Contact</a></li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <div class="container mycontent">
+          {% block content %}
+
+          {% endblock %}
+
+    </div>
+
+</body>
+
+
+</html>
