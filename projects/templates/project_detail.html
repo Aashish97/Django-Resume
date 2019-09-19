@@ -3,15 +3,15 @@
 
 {% block content %}
 <h1>{{ project.title }}</h1>
-<div class="row">
-    <div class="col-md-8">
+<div class="detail">
+    <div class="image">
         <img src="{{ project.image.url }}" alt="sorry" width="100%">
     </div>
-    <div class="col-md-4">
-        <h5>About the project:</h5>
+    <div class="description">
+        <h3>About the project:</h3>
         <p>{{ project.description }}</p>
         <br>
-        <h5>Technology used:</h5>
+        <h3>Technology used:</h3>
         <p>{{ project.technology }}</p>
     </div>
 </div>
