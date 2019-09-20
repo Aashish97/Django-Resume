@@ -4,19 +4,14 @@
 <h1>Projects</h1>
 <div class="index">
 {% for project in projects %}
-    <div class="first">
+
         <div class="second">
-            <img class="img" src="{{ project.image.url }}" alt="{{ project.title }}">
+            <a href="{% url 'projects:project_detail' project.pk %}"><img class="img" height="400" width="350" src="{{ project.image.url }}" alt="{{ project.title }}"></a>
             <div class="card-body">
                 <h4 class="card-title">{{ project.title }}</h4>
                 <p class="card-text">{{ project.description }}</p>
-                <button type="button" class="btn1">
-                    <a href="{% url 'projects:project_detail' project.pk %}">Read More >></a>
-                </button>
-
             </div>
         </div>
-    </div>
-    {% endfor %}
+{% endfor %}
 </div>
 {% endblock %}

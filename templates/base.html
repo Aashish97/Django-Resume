@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <title>Aashish Shrestha</title>
 
-    <link rel="stylesheet" href="{% static 'resume/css/test.css'%}">
+    <link rel="stylesheet" href="{% static 'resume/css/test.css'%}" type="text/css" >
 
   </head>
   
@@ -16,7 +16,7 @@
             
             <ul class="navbar-nav">
                 <li><a href="{% url 'projects:project_index' %}" class="btn btn-simple">Projects</a></li>
-                <li><a href="#" class="btn btn-simple">Education</a></li>
+                <li><a href="{% url 'educations:education_index' %}" class="btn btn-simple">Education</a></li>
                 <li><a href="#" class="btn btn-simple">Skills</a></li>
                 <li><a href="#" class="btn btn-simple">Working Experience</a></li>
                 <li><a href="#" class="btn btn-simple">Contact</a></li>
