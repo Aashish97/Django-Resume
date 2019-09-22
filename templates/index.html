@@ -18,9 +18,103 @@
     </div>
 
     <div class="profile">
-        <img src="{{ 'media/images/dabs.png' }} " height="650" width="100%">
+        <img src="{{ 'media/images/dabs.png' }} " height="620" width="100%">
     </div>
 
+</div>
+
+
+<div class="projects">
+    <a name="projects"></a>
+    <h1>Project</h1>
+
+    <div class="card-body">
+        <a href="{% url 'projects:project_index'%}"><img class="img" height="400" width="350" src="/media/images/dabs.png"></a>
+        <h4 class="card-title">CSITMate</h4>
+        <p class="card-text">Simple Q&A site for CSIT student</p>
+    </div>
+
+    <div class="card-body">
+        <a href="{% url 'projects:project_index'%}"><img class="img" height="400" width="350" src="/media/images/website.jpg"></a>
+        <h4 class="card-title">Resume</h4>
+        <p class="card-text">My personal resume</p>
+    </div>
+
+    <div class="card-body">
+        <a href="{% url 'projects:project_index'%}"><img class="img" height="400" width="350" src="/media/images/dabs.png"></a>
+        <h4 class="card-title">Clone Project</h4>
+        <p class="card-text">Simple cloning of blog website</p>
+    </div>
+
+    <p align="center">
+        <a href="{% url 'projects:project_index' %}"><button type="button" class="button">Load More</button></a>
+    </p>
+
+</div>
+
+<div class="languages">
+    <a name="languages"></a>
+    <h1>Languages</h1>
+    <h2>Nepali</h2>
+    <div class="line line8">90%</div>
+    <h2>English</h2>
+    <div class="line line9">75%</div>
+    <h2>Hindi</h2>
+    <div class="line line10">70%</div>
+</div>
+
+<div class="education">
+    <a name="education"></a>
+    <h1>Education</h1>
+    <h3>Kingdom Star High School</h3>
+    <h4>2013</h4>
+    <p>School level(SLC)</p>
+    <h3>Caribbean College</h3>
+    <h4>2013-2015</h4>
+    <p>College(HSEB)</p>
+    <h3>MBM College</h3>
+    <h4>2015-present</h4>
+    <p>Bachelor's Degree</p>
+</div>
+
+<div class="skills">
+    <a name="skills"></a>
+    <h1>Skills</h1>
+    <h2>HTML/CSS</h2>
+    <div class="line line1">65%</div>
+    <h2>JavaScript</h2>
+    <div class="line line2">65%</div>
+    <h2>C</h2>
+    <div class="line line3">70%</div>
+    <h2>C++</h2>
+    <div class="line line4">75%</div>
+    <h2>Java</h2>
+    <div class="line line5">70%</div>
+    <h2>Python</h2>
+    <div class="line line6">75%</div>
+    <h2>Django</h2>
+    <div class="line line7">75%</div>
+{#    <h2>Numpy</h2>#}
+{#    <div class="line line8">65%</div>#}
+</div>
+
+{#<div class="working_experience">#}
+{#    <a name="working_experience"></a>#}
+{#    <h1>Working Experience</h1>#}
+{#    <h2>No experience :(</h2>#}
+{#</div>#}
+
+<div class="main">
+    <footer class="contact">
+        <a name="contact"></a>
+        <h1>Find me on social media</h1>
+        <ul>
+            <li><a href="https://www.facebook.com/aashish.shrestha.97"><img src="{{ 'media/images/fb.png' }}" height="30px" width="30px"/></a></li>
+            <li><a href="https://www.instagram.com/_aashish_shrestha_/"><img src="{{ 'media/images/insta.png' }}" height="30px" width="30px"/></a></li>
+            <li><a href="https://www.linkedin.com/in/aashish-shrestha-b6354b139/"><img src="{{ 'media/images/link.png' }}" height="30px" width="30px"/></a></li>
+            <li><a href="https://github.com/Aashish97"><img src="{{ 'media/images/github.png' }}" height="30px" width="30px"/></a></li>
+        </ul>
+    </footer>
 </div>
 
 {% endblock %}

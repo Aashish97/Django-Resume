@@ -7,7 +7,7 @@
 
         <div class="second">
             <a href="{% url 'projects:project_detail' project.pk %}"><img class="img" height="400" width="350" src="{{ project.image.url }}" alt="{{ project.title }}"></a>
-            <div class="card-body">
+            <div class="second-body">
                 <h4 class="card-title">{{ project.title }}</h4>
                 <p class="card-text">{{ project.description }}</p>
             </div>

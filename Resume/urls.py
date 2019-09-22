@@ -25,7 +25,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     url(r"^$", views.HomePage.as_view(), name="home"),
     url(r"^projects/", include(("projects.urls","projects"), namespace="projects")),
-    url(r"^educations/", include(("educations.urls","educations"), namespace="educations")),
 ]
 if settings.DEBUG: # new
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

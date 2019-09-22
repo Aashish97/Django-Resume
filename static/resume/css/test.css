@@ -20,7 +20,7 @@ ul li a{
 }
 
 .navbar ul li a:hover{
-    background-color: white;
+    background-color: lightgray;
     color: #000;
 }
 .container{
@@ -30,7 +30,6 @@ ul li a{
 
 .navbar-nav{
     float: right;
-    list-style: none;
     display: inline-block;
 }
 
@@ -57,7 +56,7 @@ body {
 
 .row{
     float: left;
-    height: 70%;
+    height: 100%;
     width: 100%;
 }
 
@@ -100,7 +99,215 @@ a:link{
 .second{
     width: 32%;
     float: left;
-    padding:12px;
-
+    padding:8px;
 }
 
+.projects{
+    text-align: center;
+    width:100%;
+}
+
+.card-body{
+    width:32%;
+    float: left;
+    padding:5px;
+}
+
+.button{
+    height:40px;
+    align-items:center;
+    background-color: green;
+    padding: 10px;
+}
+
+.button:hover{
+    background-color: lightgray;
+    color: #000;
+}
+
+.languages{
+    width: 800px;
+    margin:0 auto;
+}
+
+.languages h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.languages h2{
+    text-align: left;
+}
+
+.line{
+    height: 25px;
+    min-width: 800px;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+.line:before{
+    content: '';
+    width:100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index:-2;
+    background: black;
+}
+
+.line:after{
+    content: '';
+    background: green;
+    height: 25px;
+    transition: 0.5s;
+    display: block;
+    width: 100%;
+    animation: animate 1 2s;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.line8:after{
+    max-width: 90%;
+}
+
+.line9:after{
+    max-width: 75%;
+}
+
+.line10:after{
+    max-width: 70%;
+}
+
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+.education{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.skills{
+    width: 800px;
+    margin:0 auto;
+}
+
+.skills h1{
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 40px;
+}
+
+.skills h2{
+    text-align: left;
+}
+
+.line{
+    height: 25px;
+    min-width: 800px;
+    margin: 0 auto 10px;
+    line-height: 25px;
+    font-size: 14px;
+    color: #fff;
+    padding: 0 0 0 10px;
+    position: relative;
+}
+
+.line:before{
+    content: '';
+    width:100%;
+    position: absolute;
+    left: 0;
+    height: 25px;
+    top: 0;
+    z-index:-2;
+    background: black;
+}
+
+.line:after{
+    content: '';
+    background: green;
+    height: 25px;
+    transition: 0.5s;
+    display: block;
+    width: 100%;
+    animation: animate 1 2s;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.line1:after{
+    max-width: 65%;
+}
+
+.line2:after{
+    max-width: 65%;
+}
+
+.line3:after{
+    max-width: 70%;
+}
+
+.line4:after{
+    max-width: 75%;
+}
+
+.line5:after{
+    max-width: 70%;
+}
+
+.line6:after{
+    max-width: 75%;
+}
+
+.line7:after{
+    max-width: 75%;
+}
+/*.line8:after{*/
+    /*max-width: 50%;*/
+/*}*/
+
+@keyframes animate {
+    0%{
+        width: 0;
+    }
+    100%{
+        width:100%;
+    }
+}
+
+/*.working_experience{*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*margin-top: 40px;*/
+/*}*/
+
+.main{
+    text-align: center;
+    background-color: blue;
+    height:100px;
+}
+
+.main ul li{
+    position: relative;
+    display: inline-block;
+
+}
