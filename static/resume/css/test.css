@@ -110,7 +110,6 @@ a:link{
 .card-body{
     width:32%;
     float: left;
-    padding:5px;
 }
 
 .button{
@@ -199,8 +198,16 @@ a:link{
 
 .education{
     text-align: center;
+    margin-left: 350px;
     text-transform: uppercase;
     margin-top: 40px;
+    height: 450px;
+    width: 450px;
+    background-color: green;
+}
+
+.education h1{
+    background-color: lightgray;
 }
 
 .skills{
@@ -302,7 +309,7 @@ a:link{
 
 .main{
     text-align: center;
-    background-color: blue;
+    background-color: green;
     height:100px;
 }
 
@@ -310,4 +317,7 @@ a:link{
     position: relative;
     display: inline-block;
 
+}
+.second{
+    float: left;
 }
